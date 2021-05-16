@@ -138,3 +138,77 @@ let leash = 'yellow'
 let dogWear = { cat, dog, leash }
 
 console.log(dogWear)
+
+const num1 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+for (let i = 0; i < num1.length; i++) {
+  console.log(`the number is: ${num1[i]}`)
+}
+
+const letters1 = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+
+for (let i = 0; i < letters1.length; i++) {
+  console.log(`the letter is ${letters1[i]}`)
+}
+
+const num2 = [23, 34, 35, 5, 3, 5, 6, 99]
+
+for (const zibo in num2) {
+  console.log(num2[zibo])
+}
+
+const num3s = [45, 6, 7, 8, 3, 5, 66]
+for (const num3 of num3s) {
+  if (num3 % 3 === 0) continue
+  console.log(`${num3} is divisible by 5`)
+}
+
+const days = [
+  'sunday',
+  'monday',
+  'tuesday',
+  'wednesday',
+  'thursday',
+  'friday',
+  'saturday',
+]
+
+for (const day of days) {
+  var upperDay = day.toUpperCase()
+  console.log(upperDay)
+}
+
+const books = [
+  'Don Quixote',
+  'The Hobbit',
+  'Alice in Wonderland',
+  'Tale of Two Cities',
+]
+console.log(...books)
+console.log(books)
+
+const fruits = ['apples', 'bananas', 'pears']
+const vegetables = ['corn', 'potatoes', 'carrots']
+
+// const produce = [...fruits, ...vegetables]
+
+console.log(...[...fruits, ...vegetables])
+
+const moe = ['Mohamed', 'Mahamma', 'Moz', 'Mickey']
+const zia = ['Zazzle', 'Zu', 'Zazu', 'Zooz']
+const cuteNames = [...moe, ...zia]
+console.log(...cuteNames)
+
+const names = ['Karen', 'Richard', 'Tyler']
+
+const nameLengths = names.map((name) => name.length)
+
+console.log(nameLengths)
+
+const maths = [1, 5, 6]
+const mathTotal = maths.map((math) => math * 2)
+console.log(mathTotal)
+
+const words = ['car', 'vehicle', 'rocket']
+const addLetter = words.map((word) => word + 's')
+console.log(addLetter)
